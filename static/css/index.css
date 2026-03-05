@@ -259,6 +259,22 @@ body {
   box-shadow: var(--shadow-xl);
 }
 
+.method-figure {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto 1rem;
+}
+
+.method-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2816 / 888;
+  object-fit: contain;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+}
+
 /* Reduce visual dominance of the real-world figure. */
 .realworld-image {
   display: block;
