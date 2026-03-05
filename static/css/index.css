@@ -79,7 +79,7 @@ body {
 }
 
 .link-block a {
-    margin: 8px 4px;
+    margin: 4px 4px;
 }
 
 .dnerf {
@@ -100,12 +100,12 @@ body {
 }
 
 .hero-body {
-  padding: 4rem 1.5rem;
+  padding: 3rem 0.5rem;
 }
 
 .teaser .hero-body {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-top: 0.2rem;
+  padding-bottom: 2rem;
 }
 
 .teaser {
