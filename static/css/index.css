@@ -242,6 +242,50 @@ body {
     border-radius: var(--border-radius-lg);
 }
 
+/* Framework image uses a wide custom aspect ratio (2886x1032). */
+.framework-figure {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 1rem;
+}
+
+.framework-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2886 / 1032;
+  object-fit: contain;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Reduce visual dominance of the real-world figure. */
+.realworld-image {
+  display: block;
+  width: 100%;
+  max-width: 880px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.realworld-caption {
+  max-width: 880px;
+  margin: 0.9rem auto 0;
+  font-size: 0.95rem !important;
+  line-height: 1.6;
+}
+
+.framework-caption {
+  max-width: 1120px;
+  margin: 0.9rem auto 0;
+  font-size: 0.95rem !important;
+  line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .publication-body img {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
@@ -328,6 +372,15 @@ body {
   height: 3px;
   background: var(--gradient-accent);
   border-radius: 2px;
+}
+
+/* Keep all section titles centered except BibTeX title. */
+.title {
+  text-align: center;
+}
+
+#BibTeX .title {
+  text-align: left;
 }
 
 /* Content Improvements */
@@ -748,6 +801,3 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
-
-

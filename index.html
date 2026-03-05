@@ -66,8 +66,8 @@
   <title>DiffRacing | Vector Field Augmented Differentiable Policy Learning for Vision-Based Drone Racing</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="64x64" href="static/images/UAV.png">
+  <link rel="apple-touch-icon" href="static/images/UAV.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -177,7 +177,7 @@
   <!-- More Works Dropdown -->
   <div class="more-works-container">
     <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
+      <i class="fas fa-drone"></i>
       More Works
       <i class="fas fa-chevron-down dropdown-arrow"></i>
     </button>
@@ -189,14 +189,14 @@
         </button>
       </div>
       <div class="works-list">
-        <a href="https://ieeexplore.ieee.org/document/1087247" class="work-item" target="_blank">
+        <!-- <a href="https://ieeexplore.ieee.org/document/1087247" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Real-Time Obstacle Avoidance for Manipulators and Mobile Robots</h5>
             <p>Classic potential-field based obstacle avoidance formulation.</p>
             <span class="work-venue">ICRA 1985</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
-        </a>
+        </a> -->
         <a href="https://www.nature.com/articles/s42256-025-01003-5" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Learning Vision-Based Agile Flight via Differentiable Physics</h5>
@@ -235,49 +235,49 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Shanghai Jiao Tong University<br>IEEE Robotics and Automation Letters (Preprint, Accepted March 2026)</span>
+                    <span class="author-block">Shanghai Jiao Tong University<br>IEEE Robotics and Automation Letters (Accepted March 2026)</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                       <span class="link-block">
-                        <a href="static/images/fig_2.png" target="_blank"
+                        <a href="#" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-project-diagram"></i>
+                          <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Framework</span>
+                        <span>Paper</span>
                       </a>
                     </span>
 
                     <span class="link-block">
-                      <a href="static/images/fig_7.png" target="_blank"
+                      <a href="#" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-drone"></i>
+                        <i class="ai ai-arxiv"></i>
                       </span>
-                      <span>Real-World</span>
+                      <span>Arxiv</span>
                     </a>
                   </span>
 
                   <span class="link-block">
-                    <a href="#BibTeX"
+                    <a href="#" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fas fa-quote-right"></i>
+                      <i class="fab fa-github"></i>
                     </span>
-                    <span>BibTeX</span>
+                    <span>Code</span>
                   </a>
                 </span>
 
                 <span class="link-block">
-                  <a href="#"
+                  <a href="#" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fas fa-clock"></i>
+                    <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Paper Link Soon</span>
+                  <span>Video</span>
                 </a>
               </span>
             </div>
@@ -289,18 +289,17 @@
 </section>
 
 
-<!-- Teaser -->
+<!-- Video -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/fig_7.png" alt="DiffRacing real-world experiment overview" loading="eager"/>
-      <h2 class="subtitle has-text-centered">
-        Real-world experiments: the learned policy flies through unseen zigzag and circular tracks with complex obstacle layouts at up to 6.4 m/s.
-      </h2>
+      <video id="main-video" autoplay controls muted loop playsinline width="100%" preload="metadata">
+        <source src="static/videos/one_minute.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
-<!-- End teaser -->
+<!-- End video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -320,72 +319,19 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/fig_1.png" alt="DiffRacing method comparison" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Fig. 1: Attractive Vector Fields provide geometric prior for gate traversal during differentiable policy learning.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/fig_2.png" alt="DiffRacing framework overview" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Fig. 2: Full DiffRacing framework with differentiable simulator, AVF augmentation, and Delta Action Model.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/fig_3_a.jpg" alt="Top view magnetic field visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Fig. 3(a): Top view of the constructed 3D magnetic field.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/fig_3_b.jpg" alt="Axonometric magnetic field visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fig. 3(b): Axonometric view of the magnetic field used for AVF guidance.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/fig_4.png" alt="Trajectory self-correction visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fig. 4: Overshooting trajectories are gradually corrected by Attractive Vector Fields.
-      </h2>
-    </div>
-    <div class="item">
-      <img src="static/images/fig_5.png" alt="Training scheme comparison" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fig. 5: Performance comparison across different training schemes.
-      </h2>
-    </div>
-    <div class="item">
-      <img src="static/images/fig_6.png" alt="Velocity components in real-world flight" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fig. 6: Velocity components in real-world flight with Delta Action Model compensation.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
 <!-- Framework figure -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Method Overview</h2>
+      <h2 class="title is-3">Framework</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <div class="publication-video">
-            <img src="static/images/fig_2.png" alt="DiffRacing framework overview image" loading="lazy"/>
+          <div class="framework-figure">
+            <img src="static/images/fig_2.jpg" alt="DiffRacing framework overview image" loading="lazy"/>
           </div>
+          <p class="subtitle framework-caption">
+            Overview of the DiffRacing framework. The policy network takes depth and state observations as input. The core components are the differentiable simulator (allowing loss gradients to back-propagate to the network), the Attractive Vector Field module (augmenting policy gradients during training), and the Delta Action Model (trained to compensate for dynamics mismatch). Dashed lines indicate gradient flow. Orange lines represent policy-training data flow, where UAV dynamics rollout, image rendering, loss computation, and gradient backpropagation are carried out fully in simulation. Blue lines represent the Delta Action Model pipeline including data collection, model training, and policy fine-tuning.
+          </p>
         </div>
       </div>
     </div>
@@ -393,30 +339,28 @@
 </section>
 <!-- End framework figure -->
 
-
-<!-- Additional visualizations -->
+<!-- Method section -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Additional Visualizations</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <img src="static/images/fig_4.png" alt="Trajectory self-correction under AVF" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">Trajectory self-correction under AVF guidance.</h2>
-        </div>
-        <div class="item item-video2">
-          <img src="static/images/fig_5.png" alt="Training scheme comparison results" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">Comparison of training schemes in simulation.</h2>
-        </div>
-        <div class="item item-video3">
-          <img src="static/images/fig_6.png" alt="Velocity prediction vs mocap measurement" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">Velocity prediction (simulation) vs. measured motion capture data.</h2>
+      <h2 class="title is-3">Method</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="framework-figure">
+            <img src="static/images/fig_4.jpg" alt="Trajectory self-correction under attractive vector fields" loading="lazy"/>
+          </div>
+          <p class="subtitle has-text-centered realworld-caption">
+            An Intuitive Illustration of Trajectory Self-Correction.
+          </p>
+          <p class="subtitle framework-caption">
+            DiffRacing uses differentiable dynamics to backpropagate training loss through simulator rollouts, while Attractive Vector Fields provide a geometric prior for gate traversal and reduce local-optimum issues caused by purely loss-based objectives. During training, AVF guidance is combined with differentiable loss gradients to balance high-speed racing and safety. To improve transfer robustness, a differentiable Delta Action Model learns action-space corrections for dynamics mismatch, enabling efficient sim-to-real adaptation without explicit system identification.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End additional visualizations -->
+<!-- End method section -->
 
 
 
@@ -428,7 +372,10 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Real-World Experiments</h2>
-      <img src="static/images/fig_7.png" alt="Real-world DiffRacing deployment results" loading="lazy"/>
+      <img class="realworld-image" src="static/images/fig_7.png" alt="Real-world DiffRacing deployment results" loading="lazy"/>
+      <p class="subtitle has-text-centered realworld-caption">
+        Real-world experiments. The policy is deployed on a physical drone navigating (a-c) zigzag and (d) circular tracks with complex, obstacle-dense layouts that were unseen during training. The maximum velocities recorded in (a), (b), and (c) are 5.9, 6.4, and 6.0 m/s, respectively.
+      </p>
       </div>
     </div>
   </section>
@@ -437,7 +384,7 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -454,7 +401,7 @@
   note={Preprint version, accepted in March 2026}
 }</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
